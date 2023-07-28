@@ -1,0 +1,243 @@
+html{ 
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+}
+
+nav ul li a{
+    color: rgb(21, 23, 30);
+    font-size: 20px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    display: inline-block;
+    color: rgb(131, 125, 90);
+    transform: scale(1.1);
+}
+
+.navbar{
+    display: block;
+    background: linear-gradient(60deg, purple, pink);
+    height: 8rem;
+    
+}
+
+ul{
+    
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+}
+ul li{
+  
+    font-weight: bold;
+    float: left;
+    padding: 12px;
+    margin: 0;
+    margin-top: 8px;  
+}
+a{
+    text-decoration: none;
+    color: rgb(32, 1, 102);
+    font-size: 20px;
+    
+}
+h2{
+    font-family: 'Merienda', cursiva;;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(119, 5, 91);
+    text-shadow: 2px 1px lightcoral ;
+}
+body{
+    background: linear-gradient(60deg,pink,white);
+    text-align: center;
+    
+}
+
+div{
+margin: 0.5rem;
+}
+
+.logo{
+    outline-color: blueviolet;
+    border-radius: 50%;
+    height: 12vh;
+    width: 12vh;
+    margin: 0.2cm;
+    margin-top: 0px;
+}
+label{
+    color: purple;
+    font-style:inherit;  
+}
+form {
+    box-sizing: border-box;
+    border: 1px solid;
+    font-size: 2rem;
+    font-style: inherit;
+    background-color: bisque;
+    padding: 3vw;
+    margin: 0 auto;
+    width: 120vh;
+    border-radius: 5px;
+}
+/* Acá cuando el botón sea seleccionado por el mouse, cambiará de color y también tendrá sombra por box-shadow*/
+button{
+    background-color: rgb(158, 152, 152);
+    font-size: 12px;
+    display: inline-block;
+    padding: 5px 2px;
+   
+    min-width: 35px;
+    color: rgb(12, 12, 12);
+    border: 2px solid transparent;
+    
+}
+button:hover{
+    padding: 5px 2px;
+    transition: 0.5s; 
+    color: rgb(214, 36, 155);
+    animation-delay: 0.8s;
+    border: 2px solid #b2d82a;
+    min-width: 35px;
+    box-shadow: 0 0 15px 0px #61ee20;
+}
+
+
+
+button{
+    border-radius: 10px;
+}
+
+/* Aca acomode la estructura Grid */
+ .container{
+     padding: 1rem;
+     height: 100rem;
+     display: grid;
+     grid-template-areas:"uno uno" 
+                         "uno uno"
+                         "dos dos";
+     border: 1px solid black;
+     grid-gap: 0.8rem;                     
+ }
+/* Estos serían los hijos de Grid */ 
+.uno{
+     background-color: rgba(222, 135, 218, 0.2);
+     grid-area: uno;
+ }
+.dos{
+    grid-area:dos;
+}
+   
+/* Aca agregue unos margenes al iframe para mas prolijidad*/
+iframe {
+     
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+ footer{
+    grid-area: footer;
+    background: linear-gradient(60deg, rgb(75, 1, 75), pink);
+    height: 5rem;  
+}
+
+i{
+    font-size: 4rem;
+    margin: 0.3rem;
+    transition: 0.3s;
+}
+
+i:hover{
+    display: inline-block;
+    text-shadow: 1px 1px 2px rgb(80,6,79);
+    
+}
+
+@media screen and (min-width: 320px) and (max-device-width: 768px){
+.container{
+    padding: 1rem;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+    "nav",
+    "uno",
+    "dos",
+    "footer";    
+    grid-template-columns: 100%; 
+    grid-gap: 0.8rem;
+
+    }  
+    
+.navbar{
+    grid-area: nav;
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: block;
+    background: linear-gradient(60deg, purple, pink);
+    height: 8rem;
+    
+}
+
+ul{
+    
+    padding-left: 0px;
+
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+}
+ul li{
+  
+    font-weight: bold;
+    float: left;
+    padding: 12px;
+    margin: 0;
+    margin-top: 8px;  
+}
+a{
+    text-decoration: none;
+    color: rgb(32, 1, 102);
+    font-size: 10px;
+    
+}   
+.uno{
+    grid-area: "uno";
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-wrap: wrap
+}   
+.dos{
+    grid-area: contenido2;
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+footer .footer{
+    grid-area: contenido3;
+    grid-row: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+
+
+
+    } 
+ 

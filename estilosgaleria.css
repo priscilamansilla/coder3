@@ -1,0 +1,80 @@
+html{
+    font-size: 62.5%;
+    }
+    
+    *{
+        box-sizing: border-box;
+    }
+    
+    body{
+        background: linear-gradient(60deg,pink,white);
+        text-align: center;
+        font-size: 2rem;
+      
+        
+    }
+    div{
+        margin: 0.5rem;
+    }
+    nav ul li a{
+        color: rgb(21, 23, 30);
+        font-size: 20px;
+        text-decoration: none;
+        transition: .3s;
+    }
+    /* la pseudo clase :hover se activa cuando pasamos el mouse por encima del elemento, en este caso, de las opciones del nav */
+    /* transform: scale(1.1); lo que hace es agrandarnos un poco las opciones del menú mientras el mouse esté por encima de ellas */
+    nav ul li a:hover {
+        display: inline-block;
+        color: rgb(131, 125, 90);
+        transform: scale(1.1);
+    }
+    
+    .navbar{
+        display: block;
+        background: linear-gradient(60deg, purple, pink);
+        height: 8rem;
+    }
+    
+    ul{
+        margin-top: 0px;
+        list-style-type: none;
+        display: flex;
+        align-items: flex-start;
+    }
+    ul li{
+       
+        font-weight: bold;
+        float: left;
+        padding: 12px;
+        margin: 0;
+        margin-top: 8px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(32, 1, 102);
+       font-size: 20px;
+    }
+   
+    h1{
+        font-family: 'Merienda', cursiva;
+        font-size: 60px;
+        text-align: center;
+        color: rgb(119, 5, 91);
+        text-shadow: 3px 2px lightcoral ;
+        }
+    h1{
+        font-family: 'Merienda', cursiva;
+        font-size: 60px;
+        text-align: center;
+        color: rgb(119, 5, 91);
+        text-shadow: 3px 2px lightcoral ;
+        }
+  
+
+    .footer{
+            grid-area: footer;
+            background: linear-gradient(60deg, rgb(75, 1, 75), pink);
+            height: 5rem; 
+        }
+            

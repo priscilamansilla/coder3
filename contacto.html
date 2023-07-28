@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acrobacias aereas</title>
+     <!--Con esto cargo una fuente de google-->
+
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda:wght@700&display=swap" rel="stylesheet">
+ <!--Uso iconos de fontawesome-->
+    <link rel="stylesheet" href="estiloscontcto.css">
+    <script src="https://kit.fontawesome.com/e547f827f8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+       
+        <ul>
+            <img src="assets/imges/logoacrobacias.png" alt="Logo de la empresa" class="logo">
+        <li> <a href="index.html" target= >Inicio</a></li>
+        <li> <a href="clases.html" target=>Clases</a> </li>
+        <li> <a href="contacto.html" target=>Contacto</a> </li>
+        <li> <a href="inscripcion.html" target=>Inscripciones</a> </li>
+        <li> <a href="galeria.html" target=>Galeria</a> </li>
+        
+        </ul>
+
+</header>  
+</nav>
+<main>
+    <section>
+    <!-- Agregué todo en un div container para poder utilizar Grid-->
+    <div class="container">
+    <div class="uno"><h2>Volemos sin alas</h2>
+        <form action="https://formspree.io/f/xoqyjrvq" method="POST" target="_blank">
+         <label>Nombre y Apellido:
+             <input type="text" name="Nombre_Apellido" placeholder="Ingresa tu nombre" required>
+         </label>
+ 
+         <label>Email:
+             <input type="email" name="Email" placeholder="Ingresa tu e-mail" required>
+         </label>
+         <label>Telefono:
+             <input type="tel" name="Telofono" placeholder="Ingresa tu telefono" required>
+ 
+         </label>
+         <p> Sexo:
+             <label>Mujer
+                 <input type="radio" name="Sexo" value="M">
+             </label>
+             <label>Hombre
+                 <input type="radio" name="Sexo" value="H">
+             </label>
+         </p>
+         
+            <label>Seleccionar categoría:
+                <select name="selector">
+                    <option value="Infantil">Elijo Infantil</option>
+                    <option value="Juvenil">Elijo Juvenil</option>
+                    <option value="Adulto">Elijo Adulto</option>
+ 
+                </select>
+            </label>
+ 
+            <label>Mensaje:
+             <textarea name="Mensaje" cols="30" rows="10" placeholder="Ingresa tu mensaje" required></textarea>
+         </label>
+ 
+          <button>Enviar</button>
+ 
+        </form>
+     
+      
+        <div class="dos">  
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5887830990814!2d-58.83017598505118!3d-34.639830666916225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9409fa42064d%3A0x467d77ac0f006a15!2sLa%20Reja!5e0!3m2!1ses-419!2sar!4v1620273987909!5m2!1ses-419!2sar" width="280" height="280" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+    </section>
+
+    </div>   
+    </section>
+     </main>
+
+     <div>
+         <section>
+            <footer class="footer">
+                <a href="https://www.instagram.com/p/CO3sqE8l00q/"><i class="fab fa-instagram"></i></a>
+                <a href="https://web.whatsapp.com/"> <i class="fab fa-whatsapp"> </i></a>
+             </footer>
+         </section>
+     </div>
+    </div>
+</div>
+</body>
+</html>

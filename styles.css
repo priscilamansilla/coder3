@@ -1,0 +1,232 @@
+html{
+font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(60deg,pink,white);
+    text-align: center;
+    font-size: 2rem;
+  
+    
+}
+div{
+    margin: 0.5rem;
+}
+
+nav ul li a{
+    color: rgb(21, 23, 30);
+    font-size: 20px;
+    text-decoration: none;
+    transition: .3s;
+}
+/* la pseudo clase :hover se activa cuando pasamos el mouse por encima del elemento, en este caso, de las opciones del nav */
+/* transform: scale(1.1); lo que hace es agrandarnos un poco las opciones del menú mientras el mouse esté por encima de ellas */
+nav ul li a:hover {
+    display: inline-block;
+    color: rgb(230, 67, 194);
+    transform: scale(1.1);
+}
+
+.navbar{
+    display: block;
+    background: linear-gradient(60deg, purple, pink);
+    height: 8rem;
+}
+
+ul{
+    margin-top: 0px;
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+}
+ul li{
+   
+    font-weight: bold;
+    float: left;
+    padding: 12px;
+    margin: 0;
+    margin-top: 8px;
+}
+a{
+    text-decoration: none;
+    color: rgb(32, 1, 102);
+   font-size: 20px;
+}
+.logo{
+    outline-color: blueviolet;
+    border-radius: 50%;
+    height: 12vh;
+    width: 12vh;
+    margin: 0.2cm;
+    margin-top: 0px;    
+}
+h1{
+    font-family: 'Merienda', cursiva;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(119, 5, 91);
+    text-shadow: 3px 2px lightcoral ;
+    }
+
+img{
+    width: 15em;
+    height: 20em;
+    border-radius: 5%;
+}
+
+p{
+    font-family:cursive;
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+    margin: 0.5rem;
+}
+.contenedor{
+    padding: 1rem;
+    height: 100rem;
+    display: grid;
+    grid-template-areas: "contenido1 contenido2"
+                        "contenido1 contenido2"
+                        "contenido1 contenido2"
+                        "contenido1 contenido3"
+                        "footer footer";
+    grid-template-columns: 50% 50%;
+    border: 1px solid black; 
+    grid-gap: 0.8rem;   
+}
+
+.contenido1{
+    background:linear-gradient(60deg,rgba(85, 37, 85, 0.356), pink);
+    grid-area: contenido1;
+}
+
+.contenido2{
+    background:linear-gradient(60deg,pink,rgba(85, 37, 85, 0.356));
+    grid-area: contenido2;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido3{
+    background:linear-gradient(60deg,pink, white);
+    grid-area: contenido3;
+    margin: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    align-items:baseline;
+    justify-content:space-between;
+
+}
+
+.contenedor-clases{
+    margin:auto;
+    width: 1000px;
+    background:linear-gradient(60deg,rgba(85, 37, 85, 0.356), pink);
+    }
+
+.footer{
+    grid-area: footer;
+    background: linear-gradient(60deg, rgb(75, 1, 75), pink);
+    height: 5rem; 
+}
+
+
+i{
+    font-size: 4rem;
+    margin: 0.3rem;
+    transition: 0.3s;
+}
+
+i:hover{
+    display: inline-block;
+    text-shadow: 1px 1px 2px rgb(80,6,79);
+    
+}
+
+/* Al estar en una medida entre 360 y 768, la página se va a acomodar de esta forma */
+/* El minimo es de 320 ya que es el mínimo de ancho de un teléfono, y va hasta 768 que sería el tamaño para una tablet */
+@media screen and (min-width: 320px) and (max-device-width: 768px) {
+
+.contenedor{
+    padding: 1rem;
+    height: 100%;
+    display: grid;
+    grid-template-areas:"contenido1", 
+                        "contenido2 ",
+                        "contenido3",
+                        "footer";
+                
+    grid-template-columns: 100%; 
+
+    grid-gap: 0.8rem;                  
+}
+
+/* Grid area para definir, grid-row para establecer en la fila "horizontal" del grid, column start para la columna del grid que sería la 1 en todos */
+.contenido1{
+    grid-area: contenido1;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-wrap: wrap
+}
+.contenido2{
+    grid-area: contenido2;
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-wrap: wrap; 
+
+
+}
+.contenido3{
+    grid-area: contenido3;
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+} 
+
+.navbar{
+    width: 100%;
+    height: 50px;
+}
+.navbar ul li a{
+    padding: 0;
+    font-size: 15px;
+}
+li{
+
+    padding-left: 0px;
+    padding-top: 4px;
+    padding-right: 0px;
+    padding-bottom: 2px;
+
+}
+a{
+    text-decoration: none;
+    color: rgb(32, 1, 102);
+    font-size: 5px;
+    
+}
+.logo img{
+    outline-color: blueviolet;
+    border-radius: 50%;
+    height: 6vh;
+    width: 6vh; 
+    margin: 0.2cm;
+    margin-right: 0px;
+
+}
+
+    }
+
